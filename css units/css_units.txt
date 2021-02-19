@@ -1,0 +1,34 @@
+CSS Units:
+Relative units      Absolute units
+-EM                  -PX
+-REM                 -ETC
+-VH
+-VW
+-%
+-ETC
+
+% - percentages are always relative to some other value.
+ex: width: 50% - half of the width of the parent element.
+line-height is the percentage of the font-size of the element itself.
+
+EM - With font size, 1em equals the font size of the parent. 2 ems is twice the font size of the parent.
+With other properties it is equal to the computed font size of the element itself.
+(also note that EM's when nested elements are used will scale quickly and out of control. In this case use REM's)
+(best to use when you have a specific situation where you need to scale relative to the parent or some other elements units for responsiveness)
+
+REM - Relative to the root elements font size. Often easier to work with.
+If the root font size is 20px, 1 rem is always 20px, 2rem is always 40px.
+(the html elements default font size is 16px)
+(best to use rems for font sizes because of its responsiveness)
+
+----------------------------------------------------------------------------------------------------------------------
+
+WHAT SHOULD I USE AND WHEN?
+
+px - Avoid for font sizes. use px for small detail like borders and shadows.
+
+rem/ em - use for font sizes and often margin/ padding.
+
+% - use for defining layouts and widths.
+
+vh/ vw - larger layout concerns.

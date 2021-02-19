@@ -1,0 +1,18 @@
+CSS Box Model
+
+Content - the content of the box, where text and images appear
+Padding - Clears and area around the content. The padding is transparent and takes the background color of the content. (default set to 0)
+Border - A border that goes around the padding and content.
+Margin - Space between an elements border and other elements borders. Clears and area outside the border. The margin is transparent and takes the background color of the body element. (default set to 0)
+
+
+Box Sizing - Property allows us to include the padding and border in an element's total width and height. (default is content-box)
+
+Border Clipping - Property sets whether an element's background extends underneath its border box, padding box or content box. (default is border-box)
+
+Display Property - Property specifies the display behavior (the type of rendering box) of and element.
+https://www.w3schools.com/html/html_blocks.asp
+https://www.w3schools.com/cssref/pr_class_display.asp
+
+Block vs. Inline vs. Inline-Block
+
