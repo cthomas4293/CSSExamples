@@ -1,0 +1,103 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+}
+
+/* Main Header */
+
+#main-header {
+  font-size: 2rem;
+  color: white;
+  text-align: center;
+
+  background-color: lightslategray;
+  height: 5rem;
+  padding: 10px;
+  padding-top: 20px;
+  box-sizing: border-box;
+}
+
+/* Main Navbar */
+
+#nav-bar {
+  background-color: rgb(200, 79, 150);
+  box-sizing: border-box;
+  padding: 10px;
+
+  font-size: 1.5rem;
+}
+
+#nav-bar li {
+  color: white;
+
+  list-style: none;
+
+  display: inline;
+  padding-right: 5rem;
+}
+
+#nav-bar li a {
+  color: white;
+
+  text-decoration: none;
+}
+
+/* Grab the first li element and push right */
+#nav-bar li:nth-child(1) {
+  padding-left: 4rem;
+}
+
+/* Sections */
+.container {
+  height: 60vh;
+  padding-left: 200px;
+  padding-right: 200px;
+  font-size: 1.1rem;
+}
+
+.section {
+  box-sizing: border-box;
+  padding-top: 80px;
+  text-align: center;
+  line-height: 2em;
+  height: 100%;
+  width: 33.33%;
+  float: right;
+}
+
+#section-one {
+  background-color: teal;
+}
+#section-two {
+  background-color: violet;
+}
+#section-three {
+  background-color: yellowgreen;
+}
+
+/* Footer */
+
+#main-footer {
+  background-color: wheat;
+  box-sizing: border-box;
+  height: 5vh;
+  padding-top: 10px;
+  padding-left: 60px;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  left: 0;
+}
+
+.footerEL {
+  display: inline;
+  padding-left: 40px;
+}
+
+.empty-container {
+  height: 50px;
+}
