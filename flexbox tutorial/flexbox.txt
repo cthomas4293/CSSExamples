@@ -1,0 +1,35 @@
+Flex Box
+
+flex box - a more efficient way to lay out, align and distribute space among items in a container.
+
+There are two types of properties: 
+
+Container Properties: adjustments made to the flex container.
+   flex-direction - specifies how items are placed in the flex container, defining the main axis and its direction.
+
+   justify-content - Defines how space is diestributed between items in flex container ALONG THE MAIN AXIS.
+
+   flex-wrap - specifies whether items are forced into a single line OR can be wrapped into multiple lines.
+
+   align-items - Defines how space is distributd between items in flex container ALONG THE CROSS AXIS.
+
+   align-content - Defines how space is distrributed BETWEEN ROWS in flex container ALONG THE COROSS AXIS.
+
+
+
+Flex Item Properties: adjustments made to the items in the flex container.
+
+   order - specifies the order used to lay out item in thier flex container. (the default value is 0 for every flex item)
+
+   Three values: flex-grow | flex-shrink | flex-basis
+   * the first value passed in with a unit will convert from flex... to flex-basis.
+   ex. flex: 2 2 10%
+   {
+   flex-grow - dictates how the unused space should be spread amonst flex items. (all based on ratios of UNALOCATED space)
+
+   flex-shrink - dicates how items should srink when there isn't enough space in container. (all based on ratios of UNALOCATED space)
+
+   flex-basis - sort of like width, but not. specifies the ideal size of a flex item BEFORE it's placed into a flex container. ideal means if its too big it will correctly size them to fit.
+   }
+
+   align-self - allows you to override align-items, on individal flex items.
