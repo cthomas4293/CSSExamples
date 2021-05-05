@@ -4,20 +4,22 @@ flex box - a more efficient way to lay out, align and distribute space among ite
 
 There are two types of properties: 
 
-Container Properties: adjustments made to the flex container.
+Container Properties: adjustments made to the flex CONTAINER.
+
    flex-direction - specifies how items are placed in the flex container, defining the main axis and its direction.
 
    justify-content - Defines how space is diestributed between items in flex container ALONG THE MAIN AXIS.
 
    flex-wrap - specifies whether items are forced into a single line OR can be wrapped into multiple lines.
 
-   align-items - Defines how space is distributd between items in flex container ALONG THE CROSS AXIS.
+   align-items - Defines how space is distributd between items in flex container ALONG THE CROSS AXIS (opposite of justify content).
+   note* flex-stretch will make item fill area along cross axis
 
    align-content - Defines how space is distrributed BETWEEN ROWS in flex container ALONG THE COROSS AXIS.
 
 
 
-Flex Item Properties: adjustments made to the items in the flex container.
+Flex Item Properties: adjustments made to the ITEMS in the flex container.
 
    order - specifies the order used to lay out item in thier flex container. (the default value is 0 for every flex item)
 
@@ -33,3 +35,11 @@ Flex Item Properties: adjustments made to the items in the flex container.
    }
 
    align-self - allows you to override align-items, on individal flex items.
+   
+   
+  EXAMPLES -
+  
+  for vertical and horizontally centered flex items (
+   justify content - center
+   align-items - center
+  )
