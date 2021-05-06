@@ -1,44 +1,53 @@
-Flex Box
-
-flex box - a more efficient way to lay out, align and distribute space among items in a container.
+Flex Box - a more efficient way to lay out, align and distribute space among items in a container.
+link to video -- https://www.youtube.com/watch?v=qZv-rNx0jEA&t=1473s
 
 There are two types of properties: 
 
 Container Properties: adjustments made to the flex CONTAINER.
 
-   flex-direction - specifies how items are placed in the flex container, defining the main axis and its direction.
+   flex-direction - specifies how items are placed in the flex container, defining the MAIN AXIS and its direction.
+   note* with direction row, the main axis is left to right. with column it is top to bottom.
 
    justify-content - Defines how space is diestributed between items in flex container ALONG THE MAIN AXIS.
 
    flex-wrap - specifies whether items are forced into a single line OR can be wrapped into multiple lines.
 
    align-items - Defines how space is distributd between items in flex container ALONG THE CROSS AXIS (opposite of justify content).
-   note* flex-stretch will make item fill area along cross axis
+   note* default flex-stretch will make item fill area along cross axis
 
-   align-content - Defines how space is distrributed BETWEEN ROWS in flex container ALONG THE COROSS AXIS.
+   align-content - Defines how space is distrributed BETWEEN ROWS in flex container ALONG THE CROSS AXIS.
+   note* for this to work there must be rows i.e. using flex-wrap
 
 
 
 Flex Item Properties: adjustments made to the ITEMS in the flex container.
 
-   order - specifies the order used to lay out item in thier flex container. (the default value is 0 for every flex item)
-
-   Three values: flex-grow | flex-shrink | flex-basis
-   * the first value passed in with a unit will convert from flex... to flex-basis.
-   ex. flex: 2 2 10%
-   {
-   flex-grow - dictates how the unused space should be spread amonst flex items. (all based on ratios of UNALOCATED space)
-
-   flex-shrink - dicates how items should srink when there isn't enough space in container. (all based on ratios of UNALOCATED space)
-
-   flex-basis - sort of like width, but not. specifies the ideal size of a flex item BEFORE it's placed into a flex container. ideal means if its too big it will correctly size them to fit.
-   }
-
    align-self - allows you to override align-items, on individal flex items.
+   note* select single item in css and add align-self
+   note* stretch property allows it to take up leftover space
+
+   flex: flex-grow | flex-shrink | flex-basis
+   note* the first value passed in with a unit will convert from flex... to flex-basis.
+   note* the first value passed with no unit is flex-grow
+   ex. flex: 2 2 10%
+      {
+         flex-grow - dictates how the unused space should be spread amongst flex items. (all based on ratios of UNALOCATED space)
+         note* set flex-grow on individual item depending on if you want it to grow or shrink.
+         note* flex-grow 2 means that item gets 2x the space... flex-grow 4 mean it gets 4x the space.
+
+         flex-shrink - dicates how items should srink when there isn't enough space in container. (all based on ratios of UNALOCATED space)
+         note* works the same as flex-grow
+
+         flex-basis - sort of like width, but not. specifies the ideal size of a flex item on the MAIN AXIS,  BEFORE it's placed into a flex container. ideal means if its too            big it will correctly shrink them to fit evenly.
+         note* depends on the flex-direction you are oriented in. if it is a row, width is the thought of value. in a column, height is the thought of value.
+      }
    
+  order - allows you to order the individual flex items in CSS rather than HTML markup. This allows more responsivenss and accessability for screen readers and navigating using   keyboard.
+  note* assign a value to the individual item. ex. order: 2
+  note* default value is 0 for all items
    
   EXAMPLES -
-  
+ 
   for vertical and horizontally centered flex items (
    justify content - center
    align-items - center
